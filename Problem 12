@@ -1,3 +1,9 @@
+#this problem can be solved in a number of ways.
+#1.for each i<=square root of the number, number of divisors=2, (one is i and other is n/i)
+#2.It is based on coprime numbers properties. The triangle number is equal to n*(n+1)/2 where n and n+1 are coprimes => n and (n+1)/2 are coprimes or n/2 and n+1 are coprimes ( it depends if n is even or odd ). 
+#3.The function works because of the following theorem:If n = p1e1 p2e2 ... pnen, where n is an integer and pi : primes,
+then,
+# of positive divisors : (e1 + 1) (e2 + 1) ... (en + 1)
 #solution 1
 import time
 import math
@@ -10,7 +16,7 @@ while n<=500:
 	sqrt=sum**(.5)
 	for x in range(1,int(sqrt+1)):
 		if sum%x==0:
-			n+=2    #(n, n/2)
+			n+=2    #(x, n/x)
 	if sqrt*sqrt==sum:
 		n-=1
 			
