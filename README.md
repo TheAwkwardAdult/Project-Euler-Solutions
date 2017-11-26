@@ -1,2 +1,2 @@
 # Project-Euler-Solutions
-My optimized solutions to project euler questions in solution.
+My optimized solutions to project euler questions in python.
