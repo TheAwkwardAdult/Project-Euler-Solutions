@@ -1,0 +1,11 @@
+#num.txt has one-hundred 50-digit numbers stored in it.
+import math
+nums=[]
+with open('num.txt', 'r') as f:
+	for num in f:
+		nums.append(int(num))
+	result=0
+	for num in nums:
+				result+=num
+	print(result)
+	
